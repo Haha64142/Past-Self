@@ -1,0 +1,129 @@
+[gd_scene load_steps=16 format=3 uid="uid://ds4nuslxtm1y2"]
+
+[ext_resource type="Script" path="res://level_select.gd" id="1_f08am"]
+[ext_resource type="PackedScene" uid="uid://cp4r6r8yvg2ic" path="res://background.tscn" id="2_5hckh"]
+[ext_resource type="FontFile" uid="uid://cos2nwqoccfq" path="res://Fonts/prstartk.ttf" id="2_qynwc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_py3p3"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_5er8g"]
+device = -1
+keycode = 49
+physical_keycode = 49
+key_label = 1
+unicode = 49
+
+[sub_resource type="Shortcut" id="Shortcut_nn12r"]
+events = [SubResource("InputEventKey_5er8g")]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5n8qp"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_5foen"]
+device = -1
+keycode = 50
+physical_keycode = 50
+key_label = 2
+unicode = 50
+
+[sub_resource type="Shortcut" id="Shortcut_7cr3u"]
+events = [SubResource("InputEventKey_5foen")]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gjabm"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_044l4"]
+device = -1
+keycode = 51
+physical_keycode = 51
+key_label = 3
+unicode = 51
+
+[sub_resource type="Shortcut" id="Shortcut_mt1da"]
+events = [SubResource("InputEventKey_044l4")]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ns1lu"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_p6nnj"]
+action = &"main_menu"
+
+[sub_resource type="Shortcut" id="Shortcut_rrhxl"]
+events = [SubResource("InputEventAction_p6nnj")]
+
+[node name="LevelSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f08am")
+
+[node name="Background" parent="." instance=ExtResource("2_5hckh")]
+Level = -1
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.0
+offset_top = -48.0
+offset_right = 167.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 23
+columns = 3
+metadata/_edit_group_ = true
+
+[node name="Level1" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_qynwc")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_py3p3")
+shortcut = SubResource("Shortcut_nn12r")
+text = "1"
+
+[node name="Level2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_qynwc")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5n8qp")
+shortcut = SubResource("Shortcut_7cr3u")
+text = "2"
+
+[node name="Level3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_qynwc")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gjabm")
+shortcut = SubResource("Shortcut_mt1da")
+text = "3"
+
+[node name="MainMenu" type="Button" parent="."]
+custom_minimum_size = Vector2(240, 60)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 248.0
+offset_bottom = 68.0
+theme_override_fonts/font = ExtResource("2_qynwc")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ns1lu")
+shortcut = SubResource("Shortcut_rrhxl")
+text = "Main Menu"
+
+[connection signal="pressed" from="GridContainer/Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="GridContainer/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="GridContainer/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]

@@ -1,0 +1,286 @@
+[gd_scene load_steps=16 format=3 uid="uid://5b7gwhs13y1o"]
+
+[ext_resource type="Script" path="res://level_1.gd" id="1_nkhg3"]
+[ext_resource type="PackedScene" uid="uid://cp4r6r8yvg2ic" path="res://background.tscn" id="2_3bht0"]
+[ext_resource type="PackedScene" uid="uid://c141sxkflvbst" path="res://player.tscn" id="3_x07w1"]
+[ext_resource type="PackedScene" uid="uid://b7bhuq0m72qal" path="res://button.tscn" id="4_dqhvq"]
+[ext_resource type="PackedScene" uid="uid://btdulfgm8j74y" path="res://flag.tscn" id="5_trg4n"]
+[ext_resource type="Texture2D" uid="uid://ylpg3u056typ" path="res://Art/Terrain/Grass/Left.png" id="6_jcq6o"]
+[ext_resource type="PackedScene" uid="uid://bbhr52f1i6gru" path="res://win_screen.tscn" id="6_q2uk7"]
+[ext_resource type="Texture2D" uid="uid://giyywm8rhsh8" path="res://Art/Terrain/Grass/Middle.png" id="7_xm1l3"]
+[ext_resource type="Texture2D" uid="uid://dko23uyv52red" path="res://Art/Terrain/Grass/Right.png" id="10_41cfv"]
+[ext_resource type="FontFile" uid="uid://cos2nwqoccfq" path="res://Fonts/prstartk.ttf" id="11_70uwa"]
+[ext_resource type="Texture2D" uid="uid://bqats7p6iocvq" path="res://Art/Terrain/Stone/Small Stone.png" id="15_s1b0d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aafx3"]
+size = Vector2(336, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6jgo3"]
+size = Vector2(288, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pm1c1"]
+size = Vector2(336, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hm0ah"]
+size = Vector2(16, 16)
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_nkhg3")
+
+[node name="Background" parent="." instance=ExtResource("2_3bht0")]
+
+[node name="RespawnPosition" type="Marker2D" parent="."]
+position = Vector2(94, 389)
+
+[node name="Button0" parent="." instance=ExtResource("4_dqhvq")]
+position = Vector2(0, 464)
+
+[node name="Flag" parent="." instance=ExtResource("5_trg4n")]
+position = Vector2(816, 416)
+
+[node name="WinScreen" parent="." instance=ExtResource("6_q2uk7")]
+visible = false
+offset_right = 960.0
+offset_bottom = 512.0
+
+[node name="LevelArt" type="Node2D" parent="."]
+
+[node name="Left" type="Sprite2D" parent="LevelArt"]
+position = Vector2(24, 488)
+texture = ExtResource("6_jcq6o")
+
+[node name="Middle" type="Sprite2D" parent="LevelArt"]
+position = Vector2(72, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(120, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle3" type="Sprite2D" parent="LevelArt"]
+position = Vector2(168, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle4" type="Sprite2D" parent="LevelArt"]
+position = Vector2(216, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle5" type="Sprite2D" parent="LevelArt"]
+position = Vector2(264, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle6" type="Sprite2D" parent="LevelArt"]
+position = Vector2(312, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle7" type="Sprite2D" parent="LevelArt"]
+position = Vector2(360, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle8" type="Sprite2D" parent="LevelArt"]
+position = Vector2(408, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle9" type="Sprite2D" parent="LevelArt"]
+position = Vector2(456, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle10" type="Sprite2D" parent="LevelArt"]
+position = Vector2(504, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle11" type="Sprite2D" parent="LevelArt"]
+position = Vector2(552, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle12" type="Sprite2D" parent="LevelArt"]
+position = Vector2(600, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle13" type="Sprite2D" parent="LevelArt"]
+position = Vector2(648, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle14" type="Sprite2D" parent="LevelArt"]
+position = Vector2(696, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle15" type="Sprite2D" parent="LevelArt"]
+position = Vector2(744, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle16" type="Sprite2D" parent="LevelArt"]
+position = Vector2(792, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="Middle17" type="Sprite2D" parent="LevelArt"]
+position = Vector2(840, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="SmallStone" type="Sprite2D" parent="LevelArt"]
+position = Vector2(56, 456)
+texture = ExtResource("15_s1b0d")
+
+[node name="Right" type="Sprite2D" parent="LevelArt"]
+position = Vector2(936, 488)
+texture = ExtResource("10_41cfv")
+
+[node name="Middle18" type="Sprite2D" parent="LevelArt"]
+position = Vector2(888, 488)
+texture = ExtResource("7_xm1l3")
+
+[node name="LevelCollision" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(168, 488)
+shape = SubResource("RectangleShape2D_aafx3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(480, 488)
+shape = SubResource("RectangleShape2D_6jgo3")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(792, 488)
+shape = SubResource("RectangleShape2D_pm1c1")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(56, 456)
+shape = SubResource("RectangleShape2D_hm0ah")
+
+[node name="Player" parent="." instance=ExtResource("3_x07w1")]
+player_scene = ExtResource("3_x07w1")
+
+[node name="Tutorial" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 960.0
+offset_bottom = 512.0
+
+[node name="Label" type="Label" parent="Tutorial"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -475.0
+offset_top = 51.0
+offset_right = 475.0
+offset_bottom = 135.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("11_70uwa")
+theme_override_font_sizes/font_size = 25
+text = "Use     or Arrow Keys to move
+
+Press 1 or 2 to make or delete a clone"
+horizontal_alignment = 1
+
+[node name="WAD Keys" type="Control" parent="Tutorial"]
+layout_mode = 1
+anchor_left = 0.214583
+anchor_top = 0.0195313
+anchor_right = 0.272917
+anchor_bottom = 0.0664063
+offset_top = 19.0
+offset_right = 40.0
+offset_bottom = 59.0
+metadata/_edit_use_anchors_ = true
+metadata/_edit_group_ = true
+
+[node name="W Key" type="Control" parent="Tutorial/WAD Keys"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 32.0
+offset_right = 64.0
+offset_bottom = 32.0
+
+[node name="ColorRect" type="ColorRect" parent="Tutorial/WAD Keys/W Key"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Tutorial/WAD Keys/W Key"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_70uwa")
+theme_override_font_sizes/font_size = 25
+text = "W"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="A Key" type="Control" parent="Tutorial/WAD Keys"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 32.0
+offset_right = 32.0
+offset_bottom = 64.0
+
+[node name="ColorRect" type="ColorRect" parent="Tutorial/WAD Keys/A Key"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Tutorial/WAD Keys/A Key"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_70uwa")
+theme_override_font_sizes/font_size = 25
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="D Key" type="Control" parent="Tutorial/WAD Keys"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 96.0
+offset_bottom = 64.0
+
+[node name="ColorRect" type="ColorRect" parent="Tutorial/WAD Keys/D Key"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Tutorial/WAD Keys/D Key"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_70uwa")
+theme_override_font_sizes/font_size = 25
+text = "D"
+horizontal_alignment = 1
+vertical_alignment = 1

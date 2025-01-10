@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbhr52f1i6gru"]
+
+[ext_resource type="FontFile" uid="uid://cos2nwqoccfq" path="res://Fonts/prstartk.ttf" id="1_08khv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y6gto"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_5v0s6"]
+action = &"ui_accept"
+
+[sub_resource type="Shortcut" id="Shortcut_j782k"]
+events = [SubResource("InputEventAction_5v0s6")]
+
+[node name="WinScreen" type="Control"]
+z_index = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Win" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -288.0
+offset_top = -143.5
+offset_right = 288.0
+offset_bottom = -36.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_08khv")
+theme_override_font_sizes/font_size = 72
+text = "You Win!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = 24.0
+offset_right = 255.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="MainMenu" type="Button" parent="HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(440, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_08khv")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y6gto")
+text = "Main Menu"
+
+[node name="LevelSelect" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(440, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_08khv")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y6gto")
+text = "Level Select"
+
+[node name="NextLevel" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(440, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_08khv")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y6gto")
+shortcut = SubResource("Shortcut_j782k")
+text = "Next Level"

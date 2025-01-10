@@ -1,0 +1,85 @@
+[gd_scene load_steps=10 format=3 uid="uid://c8st18ipgfdoy"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_t8vup"]
+[ext_resource type="FontFile" uid="uid://cos2nwqoccfq" path="res://Fonts/prstartk.ttf" id="1_ukjmh"]
+[ext_resource type="PackedScene" uid="uid://cp4r6r8yvg2ic" path="res://background.tscn" id="2_fqgjh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mvu2h"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_atqu5"]
+action = &"ui_accept"
+
+[sub_resource type="Shortcut" id="Shortcut_cbsjn"]
+events = [SubResource("InputEventAction_atqu5")]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mgvp"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_dygbr"]
+action = &"main_menu"
+
+[sub_resource type="Shortcut" id="Shortcut_s3w81"]
+events = [SubResource("InputEventAction_dygbr")]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t8vup")
+
+[node name="Background" parent="." instance=ExtResource("2_fqgjh")]
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -324.0
+offset_top = 104.0
+offset_right = 324.0
+offset_bottom = 192.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_ukjmh")
+theme_override_font_sizes/font_size = 90
+text = "Past Self"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = 16.0
+offset_right = 105.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 11
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(270, 88)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ukjmh")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mvu2h")
+shortcut = SubResource("Shortcut_cbsjn")
+text = "Play"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(270, 88)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ukjmh")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7mgvp")
+shortcut = SubResource("Shortcut_s3w81")
+text = "Exit"
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

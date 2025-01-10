@@ -1,0 +1,392 @@
+[gd_scene load_steps=25 format=3 uid="uid://x4s14ihvuc25"]
+
+[ext_resource type="PackedScene" uid="uid://cp4r6r8yvg2ic" path="res://background.tscn" id="1_w0wni"]
+[ext_resource type="Script" path="res://level_2.gd" id="1_y4jio"]
+[ext_resource type="PackedScene" uid="uid://btdulfgm8j74y" path="res://flag.tscn" id="2_5i53g"]
+[ext_resource type="PackedScene" uid="uid://bbhr52f1i6gru" path="res://win_screen.tscn" id="3_nvodg"]
+[ext_resource type="PackedScene" uid="uid://c141sxkflvbst" path="res://player.tscn" id="4_wn674"]
+[ext_resource type="Texture2D" uid="uid://bpkt8ba4cemft" path="res://Art/Terrain/Grass/Top Left.png" id="5_yfx0h"]
+[ext_resource type="Texture2D" uid="uid://ddcdn6003j5tv" path="res://Art/Terrain/Grass/Top Middle.png" id="6_xnq6p"]
+[ext_resource type="Texture2D" uid="uid://bmamhbxyqluqr" path="res://Art/Terrain/Grass/Top Right.png" id="7_tfh64"]
+[ext_resource type="Texture2D" uid="uid://c038pahcgjlo7" path="res://Art/Terrain/Dirt/Bottom Left.png" id="8_7h7g7"]
+[ext_resource type="Texture2D" uid="uid://10hl6drdsnq8" path="res://Art/Terrain/Dirt/Bottom Right.png" id="9_rtex2"]
+[ext_resource type="Texture2D" uid="uid://dgjt12ap50lr7" path="res://Art/Terrain/Dirt/Bottom Middle.png" id="10_xyt3v"]
+[ext_resource type="Texture2D" uid="uid://cpmnfavyg72kp" path="res://Art/Terrain/Stone/Long Stone.png" id="11_r32p1"]
+[ext_resource type="Texture2D" uid="uid://ylpg3u056typ" path="res://Art/Terrain/Grass/Left.png" id="13_bbltj"]
+[ext_resource type="Texture2D" uid="uid://dko23uyv52red" path="res://Art/Terrain/Grass/Right.png" id="14_6cpam"]
+[ext_resource type="Texture2D" uid="uid://b587wx5jrb4t6" path="res://Art/Terrain/Dirt/Center Left.png" id="14_viywi"]
+[ext_resource type="Texture2D" uid="uid://bkmmlpeg48o2e" path="res://Art/Terrain/Dirt/Center Right.png" id="15_2vl5w"]
+[ext_resource type="Texture2D" uid="uid://dnej43bv3joqx" path="res://Art/Terrain/Stone/Large Stone.png" id="15_s4r0o"]
+[ext_resource type="Texture2D" uid="uid://giyywm8rhsh8" path="res://Art/Terrain/Grass/Middle.png" id="15_ywtk5"]
+[ext_resource type="Texture2D" uid="uid://dr0ergfp3vdoi" path="res://Art/Terrain/Dirt/Center Middle.png" id="16_8ptbq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aorki"]
+size = Vector2(384, 144)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kucp"]
+size = Vector2(384, 144)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cb2ky"]
+size = Vector2(192, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6v0cd"]
+size = Vector2(960, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4n4x"]
+size = Vector2(16, 16)
+
+[node name="Level2" type="Node2D"]
+script = ExtResource("1_y4jio")
+
+[node name="Background" parent="." instance=ExtResource("1_w0wni")]
+Level = 2
+
+[node name="RespawnPosition" type="Marker2D" parent="."]
+position = Vector2(144, 320)
+
+[node name="Flag" parent="." instance=ExtResource("2_5i53g")]
+position = Vector2(824, 320)
+
+[node name="WinScreen" parent="." instance=ExtResource("3_nvodg")]
+visible = false
+offset_right = 960.0
+offset_bottom = 512.0
+
+[node name="LevelArt" type="Node2D" parent="."]
+
+[node name="TopLeft" type="Sprite2D" parent="LevelArt"]
+position = Vector2(24, 392)
+texture = ExtResource("5_yfx0h")
+
+[node name="TopMiddle" type="Sprite2D" parent="LevelArt"]
+position = Vector2(72, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(120, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle3" type="Sprite2D" parent="LevelArt"]
+position = Vector2(168, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle4" type="Sprite2D" parent="LevelArt"]
+position = Vector2(216, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle5" type="Sprite2D" parent="LevelArt"]
+position = Vector2(264, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle6" type="Sprite2D" parent="LevelArt"]
+position = Vector2(312, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle13" type="Sprite2D" parent="LevelArt"]
+position = Vector2(648, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle14" type="Sprite2D" parent="LevelArt"]
+position = Vector2(696, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle15" type="Sprite2D" parent="LevelArt"]
+position = Vector2(744, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle16" type="Sprite2D" parent="LevelArt"]
+position = Vector2(792, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle17" type="Sprite2D" parent="LevelArt"]
+position = Vector2(840, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopMiddle18" type="Sprite2D" parent="LevelArt"]
+position = Vector2(888, 392)
+texture = ExtResource("6_xnq6p")
+
+[node name="TopRight" type="Sprite2D" parent="LevelArt"]
+position = Vector2(936, 392)
+texture = ExtResource("7_tfh64")
+
+[node name="BottomLeft" type="Sprite2D" parent="LevelArt"]
+position = Vector2(24, 488)
+texture = ExtResource("8_7h7g7")
+
+[node name="BottomRight" type="Sprite2D" parent="LevelArt"]
+position = Vector2(936, 488)
+texture = ExtResource("9_rtex2")
+
+[node name="BottomMiddle" type="Sprite2D" parent="LevelArt"]
+position = Vector2(72, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(120, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle3" type="Sprite2D" parent="LevelArt"]
+position = Vector2(168, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle4" type="Sprite2D" parent="LevelArt"]
+position = Vector2(216, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle5" type="Sprite2D" parent="LevelArt"]
+position = Vector2(264, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle6" type="Sprite2D" parent="LevelArt"]
+position = Vector2(312, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle7" type="Sprite2D" parent="LevelArt"]
+position = Vector2(360, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle8" type="Sprite2D" parent="LevelArt"]
+position = Vector2(408, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle9" type="Sprite2D" parent="LevelArt"]
+position = Vector2(456, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle10" type="Sprite2D" parent="LevelArt"]
+position = Vector2(504, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle11" type="Sprite2D" parent="LevelArt"]
+position = Vector2(552, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle12" type="Sprite2D" parent="LevelArt"]
+position = Vector2(600, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle13" type="Sprite2D" parent="LevelArt"]
+position = Vector2(648, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle14" type="Sprite2D" parent="LevelArt"]
+position = Vector2(696, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle15" type="Sprite2D" parent="LevelArt"]
+position = Vector2(744, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle16" type="Sprite2D" parent="LevelArt"]
+position = Vector2(792, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle17" type="Sprite2D" parent="LevelArt"]
+position = Vector2(840, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="BottomMiddle18" type="Sprite2D" parent="LevelArt"]
+position = Vector2(888, 488)
+texture = ExtResource("10_xyt3v")
+
+[node name="TopRight2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(360, 392)
+texture = ExtResource("7_tfh64")
+
+[node name="TopLeft2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(600, 392)
+texture = ExtResource("5_yfx0h")
+
+[node name="Left" type="Sprite2D" parent="LevelArt"]
+position = Vector2(24, 296)
+texture = ExtResource("13_bbltj")
+
+[node name="Right" type="Sprite2D" parent="LevelArt"]
+position = Vector2(936, 296)
+texture = ExtResource("14_6cpam")
+
+[node name="Middle" type="Sprite2D" parent="LevelArt"]
+position = Vector2(72, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(120, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle3" type="Sprite2D" parent="LevelArt"]
+position = Vector2(168, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle4" type="Sprite2D" parent="LevelArt"]
+position = Vector2(216, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle5" type="Sprite2D" parent="LevelArt"]
+position = Vector2(264, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle6" type="Sprite2D" parent="LevelArt"]
+position = Vector2(312, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle7" type="Sprite2D" parent="LevelArt"]
+position = Vector2(360, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle8" type="Sprite2D" parent="LevelArt"]
+position = Vector2(408, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle9" type="Sprite2D" parent="LevelArt"]
+position = Vector2(456, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle10" type="Sprite2D" parent="LevelArt"]
+position = Vector2(504, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle11" type="Sprite2D" parent="LevelArt"]
+position = Vector2(552, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle12" type="Sprite2D" parent="LevelArt"]
+position = Vector2(600, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle13" type="Sprite2D" parent="LevelArt"]
+position = Vector2(648, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle14" type="Sprite2D" parent="LevelArt"]
+position = Vector2(696, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle15" type="Sprite2D" parent="LevelArt"]
+position = Vector2(744, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle16" type="Sprite2D" parent="LevelArt"]
+position = Vector2(792, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle17" type="Sprite2D" parent="LevelArt"]
+position = Vector2(840, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="Middle18" type="Sprite2D" parent="LevelArt"]
+position = Vector2(888, 296)
+texture = ExtResource("15_ywtk5")
+
+[node name="CenterLeft" type="Sprite2D" parent="LevelArt"]
+position = Vector2(24, 440)
+texture = ExtResource("14_viywi")
+
+[node name="CenterRight" type="Sprite2D" parent="LevelArt"]
+position = Vector2(936, 440)
+texture = ExtResource("15_2vl5w")
+
+[node name="CenterRight2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(360, 440)
+texture = ExtResource("15_2vl5w")
+
+[node name="CenterLeft2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(600, 440)
+texture = ExtResource("14_viywi")
+
+[node name="CenterMiddle" type="Sprite2D" parent="LevelArt"]
+position = Vector2(72, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(120, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle3" type="Sprite2D" parent="LevelArt"]
+position = Vector2(168, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle4" type="Sprite2D" parent="LevelArt"]
+position = Vector2(216, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle5" type="Sprite2D" parent="LevelArt"]
+position = Vector2(264, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle6" type="Sprite2D" parent="LevelArt"]
+position = Vector2(312, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle9" type="Sprite2D" parent="LevelArt"]
+position = Vector2(648, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle10" type="Sprite2D" parent="LevelArt"]
+position = Vector2(696, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle11" type="Sprite2D" parent="LevelArt"]
+position = Vector2(744, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle12" type="Sprite2D" parent="LevelArt"]
+position = Vector2(792, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle13" type="Sprite2D" parent="LevelArt"]
+position = Vector2(840, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="CenterMiddle14" type="Sprite2D" parent="LevelArt"]
+position = Vector2(888, 440)
+texture = ExtResource("16_8ptbq")
+
+[node name="LongStone" type="Sprite2D" parent="LevelArt"]
+position = Vector2(456, 464)
+texture = ExtResource("11_r32p1")
+
+[node name="LargeStone" type="Sprite2D" parent="LevelArt"]
+position = Vector2(384, 456)
+texture = ExtResource("15_s4r0o")
+
+[node name="LargeStone2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(416, 472)
+texture = ExtResource("15_s4r0o")
+
+[node name="LongStone2" type="Sprite2D" parent="LevelArt"]
+position = Vector2(584, 464)
+texture = ExtResource("11_r32p1")
+
+[node name="LargeStone3" type="Sprite2D" parent="LevelArt"]
+position = Vector2(544, 472)
+texture = ExtResource("15_s4r0o")
+
+[node name="LongStone3" type="Sprite2D" parent="LevelArt"]
+position = Vector2(504, 464)
+texture = ExtResource("11_r32p1")
+
+[node name="LevelCollision" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(192, 440)
+shape = SubResource("RectangleShape2D_aorki")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(768, 440)
+shape = SubResource("RectangleShape2D_6kucp")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(480, 484)
+shape = SubResource("RectangleShape2D_cb2ky")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(480, 296)
+shape = SubResource("RectangleShape2D_6v0cd")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="LevelCollision"]
+position = Vector2(392, 448)
+shape = SubResource("RectangleShape2D_f4n4x")
+
+[node name="Player" parent="." instance=ExtResource("4_wn674")]
+player_scene = ExtResource("4_wn674")

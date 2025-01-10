@@ -1,0 +1,547 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp4r6r8yvg2ic"]
+
+[ext_resource type="Script" path="res://background.gd" id="1_15268"]
+[ext_resource type="Texture2D" uid="uid://demdae7lbperq" path="res://Level Backgrounds/Level1.png" id="1_xi4nj"]
+
+[node name="Background" type="Node2D"]
+script = ExtResource("1_15268")
+
+[node name="Blue" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue2" type="Sprite2D" parent="."]
+position = Vector2(96, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue3" type="Sprite2D" parent="."]
+position = Vector2(160, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue4" type="Sprite2D" parent="."]
+position = Vector2(224, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue5" type="Sprite2D" parent="."]
+position = Vector2(288, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue6" type="Sprite2D" parent="."]
+position = Vector2(352, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue7" type="Sprite2D" parent="."]
+position = Vector2(416, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue8" type="Sprite2D" parent="."]
+position = Vector2(480, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue9" type="Sprite2D" parent="."]
+position = Vector2(544, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue10" type="Sprite2D" parent="."]
+position = Vector2(608, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue11" type="Sprite2D" parent="."]
+position = Vector2(672, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue12" type="Sprite2D" parent="."]
+position = Vector2(736, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue13" type="Sprite2D" parent="."]
+position = Vector2(800, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue14" type="Sprite2D" parent="."]
+position = Vector2(864, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue15" type="Sprite2D" parent="."]
+position = Vector2(928, 32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue16" type="Sprite2D" parent="."]
+position = Vector2(32, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue17" type="Sprite2D" parent="."]
+position = Vector2(96, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue18" type="Sprite2D" parent="."]
+position = Vector2(160, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue19" type="Sprite2D" parent="."]
+position = Vector2(224, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue20" type="Sprite2D" parent="."]
+position = Vector2(288, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue21" type="Sprite2D" parent="."]
+position = Vector2(352, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue22" type="Sprite2D" parent="."]
+position = Vector2(416, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue23" type="Sprite2D" parent="."]
+position = Vector2(480, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue24" type="Sprite2D" parent="."]
+position = Vector2(544, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue25" type="Sprite2D" parent="."]
+position = Vector2(608, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue26" type="Sprite2D" parent="."]
+position = Vector2(672, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue27" type="Sprite2D" parent="."]
+position = Vector2(736, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue28" type="Sprite2D" parent="."]
+position = Vector2(800, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue29" type="Sprite2D" parent="."]
+position = Vector2(864, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue30" type="Sprite2D" parent="."]
+position = Vector2(928, 96)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue31" type="Sprite2D" parent="."]
+position = Vector2(32, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue32" type="Sprite2D" parent="."]
+position = Vector2(96, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue33" type="Sprite2D" parent="."]
+position = Vector2(160, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue34" type="Sprite2D" parent="."]
+position = Vector2(224, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue35" type="Sprite2D" parent="."]
+position = Vector2(288, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue36" type="Sprite2D" parent="."]
+position = Vector2(352, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue37" type="Sprite2D" parent="."]
+position = Vector2(416, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue38" type="Sprite2D" parent="."]
+position = Vector2(480, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue39" type="Sprite2D" parent="."]
+position = Vector2(544, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue40" type="Sprite2D" parent="."]
+position = Vector2(608, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue41" type="Sprite2D" parent="."]
+position = Vector2(672, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue42" type="Sprite2D" parent="."]
+position = Vector2(736, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue43" type="Sprite2D" parent="."]
+position = Vector2(800, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue44" type="Sprite2D" parent="."]
+position = Vector2(864, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue45" type="Sprite2D" parent="."]
+position = Vector2(928, 160)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue46" type="Sprite2D" parent="."]
+position = Vector2(32, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue47" type="Sprite2D" parent="."]
+position = Vector2(96, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue48" type="Sprite2D" parent="."]
+position = Vector2(160, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue49" type="Sprite2D" parent="."]
+position = Vector2(224, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue50" type="Sprite2D" parent="."]
+position = Vector2(288, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue51" type="Sprite2D" parent="."]
+position = Vector2(352, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue52" type="Sprite2D" parent="."]
+position = Vector2(416, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue53" type="Sprite2D" parent="."]
+position = Vector2(480, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue54" type="Sprite2D" parent="."]
+position = Vector2(544, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue55" type="Sprite2D" parent="."]
+position = Vector2(608, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue56" type="Sprite2D" parent="."]
+position = Vector2(672, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue57" type="Sprite2D" parent="."]
+position = Vector2(736, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue58" type="Sprite2D" parent="."]
+position = Vector2(800, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue59" type="Sprite2D" parent="."]
+position = Vector2(864, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue60" type="Sprite2D" parent="."]
+position = Vector2(928, 224)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue61" type="Sprite2D" parent="."]
+position = Vector2(32, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue62" type="Sprite2D" parent="."]
+position = Vector2(96, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue63" type="Sprite2D" parent="."]
+position = Vector2(160, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue64" type="Sprite2D" parent="."]
+position = Vector2(224, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue65" type="Sprite2D" parent="."]
+position = Vector2(288, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue66" type="Sprite2D" parent="."]
+position = Vector2(352, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue67" type="Sprite2D" parent="."]
+position = Vector2(416, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue68" type="Sprite2D" parent="."]
+position = Vector2(480, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue69" type="Sprite2D" parent="."]
+position = Vector2(544, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue70" type="Sprite2D" parent="."]
+position = Vector2(608, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue71" type="Sprite2D" parent="."]
+position = Vector2(672, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue72" type="Sprite2D" parent="."]
+position = Vector2(736, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue73" type="Sprite2D" parent="."]
+position = Vector2(800, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue74" type="Sprite2D" parent="."]
+position = Vector2(864, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue75" type="Sprite2D" parent="."]
+position = Vector2(928, 288)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue76" type="Sprite2D" parent="."]
+position = Vector2(32, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue77" type="Sprite2D" parent="."]
+position = Vector2(96, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue78" type="Sprite2D" parent="."]
+position = Vector2(160, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue79" type="Sprite2D" parent="."]
+position = Vector2(224, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue80" type="Sprite2D" parent="."]
+position = Vector2(288, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue81" type="Sprite2D" parent="."]
+position = Vector2(352, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue82" type="Sprite2D" parent="."]
+position = Vector2(416, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue83" type="Sprite2D" parent="."]
+position = Vector2(480, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue84" type="Sprite2D" parent="."]
+position = Vector2(544, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue85" type="Sprite2D" parent="."]
+position = Vector2(608, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue86" type="Sprite2D" parent="."]
+position = Vector2(672, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue87" type="Sprite2D" parent="."]
+position = Vector2(736, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue88" type="Sprite2D" parent="."]
+position = Vector2(800, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue89" type="Sprite2D" parent="."]
+position = Vector2(864, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue90" type="Sprite2D" parent="."]
+position = Vector2(928, 352)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue91" type="Sprite2D" parent="."]
+position = Vector2(32, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue92" type="Sprite2D" parent="."]
+position = Vector2(96, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue93" type="Sprite2D" parent="."]
+position = Vector2(160, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue94" type="Sprite2D" parent="."]
+position = Vector2(224, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue95" type="Sprite2D" parent="."]
+position = Vector2(288, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue96" type="Sprite2D" parent="."]
+position = Vector2(352, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue97" type="Sprite2D" parent="."]
+position = Vector2(416, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue98" type="Sprite2D" parent="."]
+position = Vector2(480, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue99" type="Sprite2D" parent="."]
+position = Vector2(544, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue100" type="Sprite2D" parent="."]
+position = Vector2(608, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue101" type="Sprite2D" parent="."]
+position = Vector2(672, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue102" type="Sprite2D" parent="."]
+position = Vector2(736, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue103" type="Sprite2D" parent="."]
+position = Vector2(800, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue104" type="Sprite2D" parent="."]
+position = Vector2(864, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue105" type="Sprite2D" parent="."]
+position = Vector2(928, 416)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue106" type="Sprite2D" parent="."]
+position = Vector2(32, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue107" type="Sprite2D" parent="."]
+position = Vector2(96, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue108" type="Sprite2D" parent="."]
+position = Vector2(160, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue109" type="Sprite2D" parent="."]
+position = Vector2(224, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue110" type="Sprite2D" parent="."]
+position = Vector2(288, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue111" type="Sprite2D" parent="."]
+position = Vector2(352, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue112" type="Sprite2D" parent="."]
+position = Vector2(416, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue113" type="Sprite2D" parent="."]
+position = Vector2(480, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue114" type="Sprite2D" parent="."]
+position = Vector2(544, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue115" type="Sprite2D" parent="."]
+position = Vector2(608, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue116" type="Sprite2D" parent="."]
+position = Vector2(672, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue117" type="Sprite2D" parent="."]
+position = Vector2(736, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue118" type="Sprite2D" parent="."]
+position = Vector2(800, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue119" type="Sprite2D" parent="."]
+position = Vector2(864, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue120" type="Sprite2D" parent="."]
+position = Vector2(928, 480)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue121" type="Sprite2D" parent="."]
+position = Vector2(32, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue122" type="Sprite2D" parent="."]
+position = Vector2(96, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue123" type="Sprite2D" parent="."]
+position = Vector2(160, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue124" type="Sprite2D" parent="."]
+position = Vector2(224, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue125" type="Sprite2D" parent="."]
+position = Vector2(288, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue126" type="Sprite2D" parent="."]
+position = Vector2(352, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue127" type="Sprite2D" parent="."]
+position = Vector2(416, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue128" type="Sprite2D" parent="."]
+position = Vector2(480, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue129" type="Sprite2D" parent="."]
+position = Vector2(544, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue130" type="Sprite2D" parent="."]
+position = Vector2(608, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue131" type="Sprite2D" parent="."]
+position = Vector2(672, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue132" type="Sprite2D" parent="."]
+position = Vector2(736, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue133" type="Sprite2D" parent="."]
+position = Vector2(800, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue134" type="Sprite2D" parent="."]
+position = Vector2(864, -32)
+texture = ExtResource("1_xi4nj")
+
+[node name="Blue135" type="Sprite2D" parent="."]
+position = Vector2(928, -32)
+texture = ExtResource("1_xi4nj")
